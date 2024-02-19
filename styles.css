@@ -1,0 +1,139 @@
+/* Globale-Stile */
+
+body{
+    background-color: black;
+}
+
+h1{
+   font-family: roboto-slab; 
+   font-size: 3rem;
+   font-weight: bold;
+   color: antiquewhite;
+}
+
+h2{
+    font-family: roboto;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+
+p,li{
+    font-family: roboto;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+/* Header-bereich */
+
+.header {
+    background-image: url(./img/img\ me.jpeg);
+    background-size: cover;
+    background-position: right;
+    height: 40rem; 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: whitesmoke; 
+    position: relative;
+  }
+
+  .background-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .header-text {
+    text-align: left;
+    padding-left: 8rem;
+    z-index: 1;
+  }
+
+/* Main-Bereich */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* About-Me-Bereich */
+
+.img-text-button{
+    text-align: center;
+    
+}
+
+.img-text-button p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contact-button{
+    text-decoration: none;
+    color: whitesmoke;
+    border: .125rem solid grey;
+    border-radius: .3125rem;
+    padding: .4375rem .875rem;
+}
+
+.contact-button:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.about-me-text > ul{
+    list-style: none;
+    padding: 0;
+}
+
+.about-me-text > ul > li{
+    font-size: 1.2rem;
+
+}
+
+
+.about-me img{
+    height: 31.25rem;
+    border-radius: 0.5rem;
+
+}
+
+.about-me-text{
+    width: 50%;
+   
+}
+
+/* Skills-Bereich */
+
+.skills{
+    margin-top: 40px;
+    color: antiquewhite;
+  }
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation: moveSkills 12s linear infinite;
+
+}
+
+.skill{
+    width: 8rem;
+    padding: 10px;
+}
+
+@keyframes moveSkills {
+    0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
